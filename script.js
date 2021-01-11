@@ -56,16 +56,16 @@ var countdown = setInterval(function(){
   if(quizStart){
   document.querySelector("#timeLeft").textContent = time
   time --
-  } 
   if(time === 0){
     endQuiz ();
+    }
   }
 }, 1000);
 
 // Function that gets everything started
 var startFunction = function(){
-  document.querySelector("#header1").style.display = "none"
-  var startQuiz = document.querySelector("#startQuiz")
+  document.querySelector("#header1").style.display = "none";
+  var startQuiz = document.querySelector("#startQuiz");
   startQuiz.style.visibility = "hidden";
   // Could be written as document.querySelector("#startQuiz").style.visibility = "hidden"
   nextQuestion()
@@ -85,7 +85,7 @@ var nextQuestion = function(){
   Calling out the first question by adding .question */
   var questionString = questionArray[questionNumber].question
   
-  var newQuestion = document.createElement("h3")
+  var newQuestion = document.createElement("h3");
   newQuestion.textContent = questionString;
   
   // Put in id = questionDiv
