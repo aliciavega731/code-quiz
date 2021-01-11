@@ -17,3 +17,5 @@ The purpose of this activity was to put everything we learned about Web APIs to 
 * THEN I can save my initials and scor
 
 ## Deployed application
+
+ https://aliciavega731.github.io/code-quiz/
